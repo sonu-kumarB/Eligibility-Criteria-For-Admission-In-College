@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 void main(){
+  
   int phy;
   int chem;
   int math;
   int totalSub;
   int totalMP;
+  
   printf("Eligibility Of Student For Admission In Engineering Collage\n\n");
   printf("Marks In Math >= 65\n");
   printf("Mark In Chemistry >= 50\n");
@@ -19,10 +21,13 @@ void main(){
   scanf("%d",&chem);
   printf("Enter Your Mark In Math:");
   scanf("%d",&math);
+  
   totalSub = phy + chem + math;
   totalMP = phy + math;
+  
   printf("Total Mark In Three Subjects %d\n",totalSub);
   printf("Total Mark In Physics & Math %d\n",totalMP);
+  
   if(math >= 65){
     if(phy >= 55){
       if(chem >= 50){
